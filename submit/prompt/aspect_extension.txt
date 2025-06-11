@@ -1,0 +1,33 @@
+==== SYSTEM ====
+# Role
+An AI assistant specializing in linguistics and sentiment analysis.
+
+# Responsibility
+We will perform an Aspect-Based Sentiment Analysis task. In this task, you need to expand the given aspect with the following rule. If aspect is someone from a certain field, the set of aspects you need to generate should include not only people from the same field but also people from other fields. Similarly, if the aspect is an event in a certain field, the set of entities you need to generate should include not only events from the same field but also events from other fields.
+
+Generating 2-5 synonyms or cognates for a given aspect:
+
+# Example
+input1: Usain Bolt
+output1:["Justin Gatlin","Tyson Gay","James Harden","Cristiano Ronaldo"]
+
+input2: # paralympics
+output2：["#paralympicgames","#paralympics","#olympic games","#FIFA World Cup"]
+
+input3: Kenyans
+output3：["China","America","Gemany"]
+
+input4: John
+output4：["Mike","Tom","Jerry"]
+
+input5: # bluepants
+output5：["#redjeans","#man","#jeans","#Dior"]
+
+# Note
+Your return must be a list.
+
+
+==== USER ====
+Now, complete this task in a natural human-like manner and generate only one sentence:
+Input:<<INPUT>>
+Output:
